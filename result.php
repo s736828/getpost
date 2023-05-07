@@ -1,6 +1,6 @@
 <?php
-$height = $_GET['height']; //身高
-$weight = $_GET['weight']; //體重
+$height = $_GET['height']; //宣告變數名稱，去接name傳值參數
+$weight = $_GET['weight']; //宣告變數名稱，去接name傳值參數
 
 echo "您輸入的身高為:" . $height . "公分<br>";
 echo "您輸入的體重為:" . $weight . "公斤<br>";
@@ -22,4 +22,5 @@ echo "你的BMI為:" . $bmi;
 echo "<br>";
 echo "您的體位判定為: $level";
 echo "<br>";
-echo "<a href='bmi_form.php'>回BMI頁</a>";
+?>
+<a href='bmi_form.php'>回BMI頁</a>

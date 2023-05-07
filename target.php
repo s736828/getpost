@@ -21,7 +21,6 @@ if(empty($a)){
     echo "假";
 }
 
-
 // if(isset($_GET)){
 //     echo "真";
 // }else{
@@ -33,6 +32,7 @@ if(empty($a)){
 // }else{
 //     echo "假";
 // }
+echo "<hr>";
 
 if (!empty($_GET)) {
     echo "以下資料為get表單的資料<br>";

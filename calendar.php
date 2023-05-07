@@ -37,7 +37,7 @@ $holiday = [
 ];
 //判斷當當前月份為1月時，前一個月應為前年的12，否則只要減1即可
 if ($month == 1) {
-    $prevYear = $prevYear - 1;
+    $prevYear = $year - 1;
     $prevMonth = 12;
 } else {
     $prevYear = $year;
@@ -85,25 +85,25 @@ for ($i = 0; $i < count($days); $i++) {
         //判斷當日是否為特殊假日
         if (isset($holiday[$days[$i]])) {
             //如果為假日則加上class today
-            echo "<div class='today'>{$d}";
+            echo "<div class='today'> {$d}";
             echo "<div>";
             echo $holiday[$days[$i]];
             echo "</div>";
             echo "</div>";
         } else {
             //如果為非假日則一般顯示
-            echo "<div class='today'>{$d}</div>";
+            echo "<div class='today'> {$d}</div>";
         }
         //判斷當日是否為周末日
     } else if (date("w", strtotime($days[$i])) == 0 || date("w", strtotime($days[$i])) == 6) {
         if (isset($holiday[$days[$i]])) {
             echo "<div class='weekend'> {$d}";
-            echo "<div>";
+            echo " <div>";
             echo $holiday[$days[$i]];
             echo "</div>";
             echo "</div>";
         } else {
-            echo "<div class='weekend'>{$d}</div>";
+            echo "<div class='weekend'> {$d}</div>";
         }
     } else {
         if (isset($holiday[$days[$i]])) {

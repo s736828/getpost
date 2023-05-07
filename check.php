@@ -6,7 +6,7 @@ if ($_POST['acc'] == $ccc && $_POST['pw'] == $pwd) {
 } else {
     // echo "帳密錯誤，登入失敗";
     header("location:login.php?error=帳密錯誤，登入失敗");
-    //導到login.php的頁面，並網址後面訊息加上?error=帳密錯誤，登入失敗
+    //導到login.php的頁面，網址?後面訊息加上error=帳密錯誤，登入失敗
 }
 ?>
 <br>

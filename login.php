@@ -11,7 +11,6 @@
 
 ?>
 <h1>登入頁面</h1>
-<!-- <form action="?" method="post"> -->
 <?php
 if (isset($_POST['error'])) {
     echo "<span style=' color:red'>";
